@@ -4,6 +4,5 @@ services:
     image: mohammadmazraeh/bombsquad-server:latest
     network_mode: host
     container_name: bombsquad-server
-    entrypoint: ./BombSquad_Server/bombsquad_server
     volumes:
       - ./config.py:/BombSquad_Server/config.py
