@@ -11,3 +11,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     mkdir /BombSquad_Server && \
     tar -zxvf /tmp/BombSquad_Server_Linux_64bit_1.4.150.tar.gz -C /BombSquad_Server --strip 1 && \
     rm /tmp/BombSquad_Server_Linux_64bit_1.4.150.tar.gz
+
+WORKDIR BombSquad_Server
