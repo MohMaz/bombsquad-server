@@ -11,6 +11,7 @@ Simply dockerize a bombsquad server to make it even easier to setup! I hope this
 git clone https://github.com/MohMaz/bombsquad-server.git
 cd bombsquad-server
 docker-compose up -d
+docker exec -it bombsquad-server ./bombsquad_server
 ```
 
 # Useful links:

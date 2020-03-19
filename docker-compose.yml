@@ -5,4 +5,6 @@ services:
     network_mode: host
     container_name: bombsquad-server
     volumes:
-      - ./config.py:/BombSquad_Server/config.py
+      - ./config.py:/BombSquad_Server/config.py:rw
+    entrypoint: sleep infinity
+    #entrypoint: python ./bombsquad_server

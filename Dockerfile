@@ -13,4 +13,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm /tmp/BombSquad_Server_Linux_64bit_1.4.150.tar.gz
 
 WORKDIR BombSquad_Server
-ENTRYPOINT /BombSquad_Server/bombsquad_server
+ENTRYPOINT chmod 777 config.py && \
+	   chmod 777 bombsquad_server && \
+	   ./bombsquad_server
